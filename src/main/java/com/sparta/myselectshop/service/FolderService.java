@@ -1,6 +1,5 @@
 package com.sparta.myselectshop.service;
 
-import com.sparta.myselectshop.dto.FolderRequestDto;
 import com.sparta.myselectshop.dto.FolderResponseDto;
 import com.sparta.myselectshop.entity.Folder;
 import com.sparta.myselectshop.entity.User;
@@ -43,7 +42,7 @@ public class FolderService {
             responseDtoList.add(new FolderResponseDto(folder));
         }
 
-        return null;
+        return responseDtoList;
     }
 
     private boolean isExistFolderName(String folderName, List<Folder> existFolderList) {
